@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;toggleButton1&apos; in &apos;com.bob.practice.R.id&apos; to &apos;toggleButtonwifi&apos;&#x0D;&#x0A;- Original project: &apos;Practice&apos;&#x0D;&#x0A;- Original element: &apos;com.bob.practice.R.id.toggleButton1&apos;&#x0D;&#x0A;- Renamed element: &apos;com.bob.practice.R.id.toggleButtonwifi&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="true" description="Rename field &apos;toggleButton1&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/gen&lt;com.bob.practice{R.java[R[id^toggleButton1" name="toggleButtonwifi" references="true" setter="false" stamp="1443968067815" textual="false" version="1.0"/>
+</session>

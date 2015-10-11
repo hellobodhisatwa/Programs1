@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#6495ED"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="36dp"
+        android:text="Multi Converter"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="#FFF8DC"
+        android:text="Result"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/gobutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewresult"
+        android:layout_alignRight="@+id/textViewresult"
+        android:layout_marginBottom="56dp"
+        android:text="Go" />
+
+    <EditText
+        android:id="@+id/editTextoption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextoption2"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="36dp"
+        android:background="#FFF8DC"
+        android:ems="10"
+        android:hint="From" />
+
+    <EditText
+        android:id="@+id/editTextoption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gobutton"
+        android:layout_below="@+id/editTextoption1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFF8DC"
+        android:ems="10"
+        android:hint="To" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

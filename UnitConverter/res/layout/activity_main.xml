@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Spinner
+        android:id="@+id/spinneroptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:background="#7A99E0" />
+
+    <EditText
+        android:id="@+id/editTextinput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinneroptions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="#E6F38C"
+        android:inputType="numberDecimal"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextinput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextinput1"
+        android:layout_below="@+id/editTextinput1"
+        android:layout_marginTop="33dp"
+        android:background="#E6F38C"
+        android:inputType="numberDecimal"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/buttonconvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextinput2"
+        android:layout_alignRight="@+id/editTextinput2"
+        android:layout_below="@+id/editTextinput2"
+        android:layout_marginTop="39dp"
+        android:background="#333300"
+        android:text="Convert"
+        android:textColor="#9AFDCD"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/buttonclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonconvert"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/buttonconvert"
+        android:layout_marginBottom="22dp"
+        android:background="#6B1F4D"
+        android:text="Clear"
+        android:textColor="#0066FF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonconvert"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="#E6F38C"
+        android:inputType="numberDecimal"
+        android:text="Result"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#8B4513" />
+
+</RelativeLayout>

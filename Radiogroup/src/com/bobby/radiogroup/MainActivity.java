@@ -1,0 +1,59 @@
+package com.bobby.radiogroup;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.RadioGroup;
+import android.widget.RadioGroup.OnCheckedChangeListener;
+import android.widget.Toast;
+
+public class MainActivity extends Activity implements OnCheckedChangeListener{
+	
+	RadioGroup optionsradioGroup;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        optionsradioGroup = (RadioGroup) findViewById(R.id.radioGroupoptions);
+        
+        
+        optionsradioGroup.setOnCheckedChangeListener(MainActivity.this);
+        optionsradioGroup.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+			
+			@Override
+			public void onCheckedChanged(RadioGroup arg0, int id) {
+				// TODO Auto-generated method stub
+				
+				switch(id)
+						{
+				case R.id.radiooption1:
+					Toast.makeText(MainActivity.this, "You have selected option 1", Toast.LENGTH_SHORT).show();
+					break;
+					
+				case R.id.radiooption2:
+					Toast.makeText(MainActivity.this, "You have selected option 2", Toast.LENGTH_SHORT).show();
+					break;
+					
+				case R.id.radiooption3:
+					Toast.makeText(MainActivity.this, "You have selected option 3", Toast.LENGTH_SHORT).show();
+					break;
+					
+					default:
+						break;
+						}
+				
+			}
+		});
+    }
+
+	@Override
+	public void onCheckedChanged(RadioGroup group, int checkedId) {
+		// TODO Auto-generated method stub
+		
+	}
+    
+    
+    
+}
